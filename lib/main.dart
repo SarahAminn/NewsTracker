@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'news_page.dart';
+
+import 'Screens/news_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,9 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData().copyWith(
-        primaryColor: Color(0xFF072B39),
-      ),
+      debugShowCheckedModeBanner: false,
       home: NewsPage(),
     );
   }

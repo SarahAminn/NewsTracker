@@ -12,7 +12,12 @@ class NewsCards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      width: MediaQuery.of(context).size.width * 0.9,
+      height: MediaQuery.of(context).size.height * 0.5,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(30.0),
+          color: Colors.blue,
+          boxShadow: [BoxShadow(color: Colors.black, blurRadius: 5)]),
       child: GestureDetector(
         onTap: onPress,
         child: Column(
